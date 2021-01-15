@@ -1,0 +1,75 @@
+
+$inverse : #292b2c;
+
+// Main Sass File
+.loader {
+    border: 4px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 4px solid blue;
+    border-right: 4px solid green;
+    border-bottom: 4px solid red;
+    border-left: 4px solid #f3f3f3;
+    width: 25px;
+    height: 23px;
+    -webkit-animation: spin 10s linear ;
+    animation: spin 7s linear ;
+  }
+  
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+.bg-inverse{
+    background-color: $inverse;
+}
+
+#main-header{
+    img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .port-item{
+        width: 30%;
+
+        .fa{
+            font-size: 2em;
+        }
+    }
+
+    .port-item:hover{
+        opacity: 0.8;
+        cursor: pointer;
+    }
+
+    .bg-darkness{
+        background-color: #000;
+    }
+
+    
+}
+
+
+@media(min-width:991px){
+    .port-item{
+        padding: 3.5em !important;
+    }
+#main-footer{
+
+
+    .fa{
+        font-size:15px ;
+    }
+
+}    
+
+    .fa{
+        font-size: 25px;
+    }
+}
